@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
              if (mMediaPlayer != null){
                  IsPlaying();
              } else {
-                 mMediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.konan);
-                 IsPlaying();
+                 mMediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.americano);
+               IsPlaying();
              }
 
          }
@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         mplaybtn = (Button)findViewById(R.id.btn_play);
         mplaybtn.setOnClickListener(btn_play_click);
 
-        mMediaPlayer = MediaPlayer.create(this, R.raw.Americano);
+       mMediaPlayer = MediaPlayer.create(this, R.raw.americano);
    //     mMediaPlayer.setLooping(true); //무한반복
         nn = (Button)findViewById(R.id.nn);
         nn.setOnClickListener(nnn);
