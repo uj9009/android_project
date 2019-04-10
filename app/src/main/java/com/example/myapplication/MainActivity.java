@@ -142,11 +142,8 @@ public class MainActivity extends AppCompatActivity {
         mplaybtn = (Button)findViewById(R.id.btn_play);
         mplaybtn.setOnClickListener(btn_play_click);
 
-
-        mMediaPlayer = MediaPlayer.create(this, R.raw.konan);
+        mMediaPlayer = MediaPlayer.create(this, R.raw.Americano);
    //     mMediaPlayer.setLooping(true); //무한반복
-
-
         nn = (Button)findViewById(R.id.nn);
         nn.setOnClickListener(nnn);
 
