@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CoffeeClicked"></activity>
+        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".WorldClicked" />
+        <activity android:name=".WorldList" />
+        <activity android:name=".CoffeeClicked" />
         <activity android:name=".CoffeeList" />
 
         <uses-library
@@ -17,16 +20,17 @@
             android:required="false" />
 
         <meta-data
-            android:name="com.google.android.geo.APT_KEY"
+            android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD9o6sS8SwdoiKTkoxbZUtiMJo2GRfN6D8" />
 
-        <activity android:name=".Main2Activity" />
         <activity android:name=".IntroActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity" />
     </application>

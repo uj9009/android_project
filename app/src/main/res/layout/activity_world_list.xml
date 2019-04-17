@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".WorldList"
     android:orientation="vertical">
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:text="서울 지하철 1-9호선 카페를 추천해 드립니다"
-        android:gravity="center"/>
-
-
-    <fragment
-        android:id="@+id/map"
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        class="com.google.android.gms.maps.MapFragment" />
+        android:id="@+id/world_list"
+        android:dividerHeight="5dp"
+        android:divider="#00000000"
+        ></ListView>
 
 </LinearLayout>
