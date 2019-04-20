@@ -17,7 +17,6 @@ import java.io.IOException;
 public class MainActivity extends AppCompatActivity {
 
     ViewFlipper v_fillipper;
-    TextView main_coffee, main_world;
     Button  mplaybtn, btn_google;
     Button mstopbtn;
     Button btn_stop;
@@ -27,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
     SeekBar seekBar1;
     ImageView coffee1_img, coffee2_img, coffee3_img, coffee4_img;
     MediaPlayer mMediaPlayer;
-
-
 
 
 
@@ -142,14 +139,14 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        main_coffee = (TextView)findViewById(R.id.main_coffee);
-        main_world = (TextView)findViewById(R.id.main_world);
+     //  main_coffee = (TextView)findViewById(R.id.main_coffee);
+     //  main_world = (TextView)findViewById(R.id.main_world);
         // btn_music = (Button)findViewById(R.id.btn_music);
 
       //  btn_more1.setOnClickListener(btn_more1_click);
       //  btn_more2.setOnClickListener(btn_more2_click);
-        main_coffee.setOnClickListener(main_coffee_click);
-        main_world.setOnClickListener(main_world_click);
+      //  main_coffee.setOnClickListener(main_coffee_click);
+     //   main_world.setOnClickListener(main_world_click);
 
         btn_coffee = (Button)findViewById(R.id.btn_coffee);
         btn_coffee.setOnClickListener(btn_coffee_click);

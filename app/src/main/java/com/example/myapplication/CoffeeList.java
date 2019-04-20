@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CoffeeList extends AppCompatActivity implements View.OnClickListener {
 
-    private ArrayList<CoffeeItem> data = null;
+ private ArrayList<CoffeeItem> data = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,6 @@ public class CoffeeList extends AppCompatActivity implements View.OnClickListene
         data = new ArrayList<>();
         // 1번 아이템
         CoffeeItem coffee1 = new CoffeeItem(R.drawable.coffee1, "아메리카노", "에스프레소 + 물 \n 아메리카노는 물과 에스프레소를 섞은 것으로 음청 써요 그래서 호불호가 갈리는 커피랍니다");
-
         //2번 아이템
         CoffeeItem coffee2 = new CoffeeItem(R.drawable.coffee2, "라떼", "에스프레소 + 우유");
 

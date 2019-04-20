@@ -10,15 +10,27 @@ public class CoffeeItem {
         return profile;
     }
 
+   /* public void setProfile(int profile){
+        this.profile = profile;
+    } */
+
     public String getName() {
         return name;
     }
+
+  /* public void setName(String name){
+        this.name = name;
+    } */
 
     public String getInfo() {
         return info;
     }
 
-    public CoffeeItem(int profile, String name, String info) {
+   /* public  void setInfo(String info){
+        this.info = info;
+    } */
+
+   public CoffeeItem(int profile, String name, String info) {
         this.profile = profile;
         this.name = name;
         this.info = info;

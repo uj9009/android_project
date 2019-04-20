@@ -29,10 +29,6 @@
             android:layout_gravity="center"
             android:src="@drawable/logo"
             android:id="@+id/logo"/>
-
-
-
-
     </LinearLayout>
 
     <ViewFlipper
@@ -42,95 +38,54 @@
     </ViewFlipper>
 
     <TextView
-        android:layout_width="100dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:gravity="center"
-        android:id="@+id/main_coffee"
-        android:text="Coffee" />
+        android:text="무엇이 궁금하신가요 ㅋㅋ?" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
-        <ImageView
-            android:id="@+id/coffee1_img"
-            android:layout_width="101dp"
-            android:layout_height="50dp"
-            android:src="@drawable/coffee1" />
-
-        <ImageView
-            android:id="@+id/coffee2_img"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:src="@drawable/coffee2" />
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:id="@+id/coffee3_img"
-            android:src="@drawable/coffee3"/>
-
-        <ImageView
-            android:id="@+id/coffee4_img"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:src="@drawable/coffee4" />
-
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_coffee"
+            android:text="coffee"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_world"
+            android:text="world"
+            android:textSize="10dp"/>
 
     </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:id="@+id/btn_coffee"
-        android:text="more"
-        android:textSize="10dp"/>
 
-
-
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:id="@+id/main_world"
-        android:text="World" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:id="@+id/world1_img"
-            android:src="@drawable/coffee1"/>
+        android:orientation="horizontal"
+        android:gravity="center">
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:id="@+id/world2_img"
-            android:src="@drawable/coffee2"/>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:id="@+id/world3_img"
-            android:src="@drawable/coffee3"/>
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:id="@+id/world4_img"
-            android:src="@drawable/coffee4"/>
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="google"
+            android:textSize="10dp"/>
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_refill"
+            android:text="refill"
+            android:textSize="10dp"/>
 
     </LinearLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:id="@+id/btn_world"
-        android:text="more"
-        android:textSize="10dp"/>
-
-
-
 
 
         <TextView
@@ -158,11 +113,6 @@
             android:layout_alignParentLeft="true" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_google"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="google"/>
-    </LinearLayout>
+</LinearLayout>
 
 </ScrollView>
