@@ -23,9 +23,9 @@ public class CoffeeList extends AppCompatActivity implements View.OnClickListene
 
         data = new ArrayList<>();
         // 1번 아이템
-        CoffeeItem coffee1 = new CoffeeItem(R.drawable.coffee1, "아메리카노", "에스프레소 + 물 \n 아메리카노는 물과 에스프레소를 섞은 것으로 음청 써요 그래서 호불호가 갈리는 커피랍니다");
+        CoffeeItem coffee1 = new CoffeeItem(R.drawable.coffee1, R.drawable.coffee2, "아메리카노", "에스프레소 + 물 \n 아메리카노는 물과 에스프레소를 섞은 것으로 음청 써요 그래서 호불호가 갈리는 커피랍니다");
         //2번 아이템
-        CoffeeItem coffee2 = new CoffeeItem(R.drawable.coffee2, "라떼", "에스프레소 + 우유");
+        CoffeeItem coffee2 = new CoffeeItem(R.drawable.coffee2, R.drawable.coffee1,"라떼", "에스프레소 + 우유");
 
         //리스트에 추가
         data.add(coffee1);
@@ -44,6 +44,7 @@ public class CoffeeList extends AppCompatActivity implements View.OnClickListene
 
                 /* putExtra의 첫 값은 식별 태그, 뒤에는 다음 화면에 넘길 값 */
                 coffeeintent.putExtra("profile", Integer.toString(data.get(position).getProfile()));
+                coffeeintent.putExtra("profile2", Integer.toString(data.get(position).getProfile2()));
                 coffeeintent.putExtra("name", data.get(position).getName());
                 coffeeintent.putExtra("info", data.get(position).getInfo());
                 startActivity(coffeeintent);

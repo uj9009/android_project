@@ -1,24 +1,25 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.provider.ContactsContract;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class RefillAdapter extends BaseAdapter {
 
-    List<RefillItem> refillItems;
-    Context context;
+    /* 아이템을 세트로 담기 위한 어레이 */
+   private ArrayList<RefillItem> refillItems = new ArrayList<>();
 
-    public RefillAdapter (Context c, List<RefillItem> r){
-        context = c;
-        refillItems = r;
-    }
     @Override
     public int getCount() {
         return refillItems.size();
@@ -26,30 +27,53 @@ public class RefillAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return refillItems.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
-    public View getView(int position, View View, ViewGroup parent) {
-        if (View == null){
-            LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View = inflater.inflate(R.layout.refill_item, parent, false);
+    public View getView(int position, View converView, ViewGroup parent) {
+       // Context context = parent.getContext();
+
+        CustomViewHolder holder;
+
+        if (converView == null){
+        //    LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            converView = LayoutInflater.from(parent.getContext()).inflate(R.layout.refill_item, null, false);
+
+            holder = new CustomViewHolder();
+            holder.img_title = (ImageView)converView.findViewById(R.id.img_title);
+            holder.title = (TextView)converView.findViewById(R.id.title);
+            holder.tv_sang = (TextView)converView.findViewById(R.id.tv_sang);
+            holder.tv_ga = (TextView)converView.findViewById(R.id.tv_ga);
+            holder.tv_jo = (TextView)converView.findViewById(R.id.tv_jo);
+
+            converView.setTag(holder);
+
+        } else {
+            holder = (CustomViewHolder)converView.getTag();
         }
 
-        ImageView img_title = (ImageView)View.findViewById(R.id.img_title);
-        TextView tv_sang = (TextView)View.findViewById(R.id.tv_sang);
-        TextView tv_ga = (TextView)View.findViewById(R.id.tv_ga);
-        TextView tv_jo = (TextView)View.findViewById(R.id.tv_jo);
+        RefillItem refillItem = refillItems.get(position);
 
-        img_title.setImageDrawable(refillItems.get(position).getImg_title());
-        tv_sang.setText(refillItems.get(position).getTv_sang());
-        tv_jo.setText(refillItems.get(position).getTv_jo());
-        tv_ga.setText(refillItems.get(position).getTv_ga());
-        return View;
+        holder.img_title.setImageResource(refillItem.getImg_title());
+        holder.title.setText(refillItem.getTitle());
+        holder.tv_sang.setText(refillItem.getTv_sang());
+        holder.tv_jo.setText(refillItem.getTv_jo());
+        holder.tv_ga.setText(refillItem.getTv_ga());
+
+        return converView;
+    }
+
+    class CustomViewHolder {
+        ImageView img_title;
+        TextView title, tv_sang, tv_jo, tv_ga;
+    }
+    public  void addItem(RefillItem refillItem) {
+        refillItems.add(refillItem);
     }
 }

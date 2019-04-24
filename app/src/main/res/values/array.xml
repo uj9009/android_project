@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="img_title">
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee1</item>
+    </integer-array>
+
+    <string-array name="title">
+        <item>요거프레소(YOGER PRESSO)</item>
+        <item>드롭탑(DROPTOP)</item>
+        <item>세븐몽키스(SEVEN MONKEYS)</item>
+        <item>카페 파스꾸찌(CAFFE PASCUCCI)</item>
+        <item>커피빈(CAFFE BEAN)</item>
+        <item>커핀 그루나루(COFFINE GURUNARU)</item>
+        <item>탐앤탐스(TOM N TOMS)</item>
+        <item>파리크라상(PARIS CROISSANT)</item>
+        <item>할리스(HOLLYS COFFEE)</item>
+        <item>핸즈커피(HANDS COFFEE)</item>
+    </string-array>
+
+    <string-array name="tv_sang">
+        <item>아메리카노</item>
+        <item>아메리카노</item>
+        <item>아메리카노, 드립커피</item>
+        <item>아메리카노, 드립커피</item>
+        <item>오늘의 커피</item>
+        <item>아메리카노</item>
+        <item>아메리카노</item>
+        <item>아메리카노</item>
+        <item>아메리카노</item>
+        <item>아메리카노</item>
+    </string-array>
+
+    <string-array name="tv_jo">
+        <item>당일 영수증, 아메리카노 머그잔</item>
+        <item>당일 영수증 필요</item>
+        <item>당일 영수증 필요</item>
+        <item>3시간 이내 영수증 필요</item>
+        <item>낮 12시 이전, 세트메뉴(오늘의 커피)</item>
+        <item>2시간 이내 영수증 필요</item>
+        <item>2시간 이내 영수증 필요</item>
+        <item>2시간 이내 영수증 필요</item>
+        <item>3시간 이내 영수증 필요</item>
+        <item>당일 영수증, 머그컵 사용</item>
+    </string-array>
+
+    <string-array name="tv_ga">
+        <item>1,000원</item>
+        <item>1,000원 ~ 1,500원</item>
+        <item>500원 ~ 1,300원</item>
+        <item>1,000원</item>
+        <item>무료</item>
+        <item>500원</item>
+        <item>1,000원 ~ 2,000원</item>
+        <item>무료</item>
+        <item>1,000원 ~ 1,500원</item>
+        <item>무료</item>
+
+    </string-array>
+
+</resources>

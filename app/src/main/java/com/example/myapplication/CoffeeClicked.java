@@ -18,11 +18,14 @@ public class CoffeeClicked extends AppCompatActivity {
         Intent coffeeintent = getIntent();
 
         ImageView profile = (ImageView)findViewById(R.id.img_pro1);
+        ImageView profile2 = (ImageView)findViewById(R.id.img_pro2);
         TextView name = (TextView)findViewById(R.id.tv_name);
         TextView info = (TextView)findViewById(R.id.tv_info);
 
         img = Integer.parseInt(coffeeintent.getStringExtra("profile"));
         profile.setImageResource(img);
+        img = Integer.parseInt(coffeeintent.getStringExtra("profile2"));
+        profile2.setImageResource(img);
         name.setText(coffeeintent.getStringExtra("name"));
         info.setText(coffeeintent.getStringExtra("info"));
 

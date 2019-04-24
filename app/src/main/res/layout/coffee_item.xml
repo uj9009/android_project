@@ -14,6 +14,11 @@
         android:layout_height="50dp"
         android:id="@+id/profile"
         />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/profile2"
+            />
 
     <LinearLayout
         android:layout_width="wrap_content"

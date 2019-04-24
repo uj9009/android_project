@@ -3,49 +3,49 @@ package com.example.myapplication;
 import android.graphics.drawable.Drawable;
 
 public class RefillItem {
-    String titile, tv_sang, tv_jo, tv_ga;
-    Drawable img_title;
+    private  String title, tv_sang, tv_jo, tv_ga;
+    private int img_title;
 
-    public RefillItem(Drawable i, String t, String s, String j, String g){
+ /*   public RefillItem(Drawable img_title, String titile, String s, String j, String g){
 
-        img_title = i;
-        titile = t;
-        tv_ga = g;
-        tv_jo = j;
-        tv_sang = s;
+        img_title = img_title;
+        titile = titile;
+        tv_ga = tv_ga;
+        tv_jo = tv_jo;
+        tv_sang = tv_sang;
+ } */
 
 
-    }
-    public Drawable getImg_title(){
+    public int getImg_title(){
         return img_title;
     }
-    public void setImg_title(Drawable i){
-        this.img_title = i;
+    public void setImg_title(int img_title){
+        this.img_title = img_title;
     }
 
-    public String getTitile(){
-        return titile;
+    public String getTitle(){
+        return title;
     }
-    public void setTitile(String t){
-        this.titile = t;
+    public void setTitle(String title){
+        this.title = title;
     }
     public String getTv_sang(){
         return tv_sang;
     }
-    public void setTv_sang(String s){
-        this.tv_sang = s;
+    public void setTv_sang(String tv_sang){
+        this.tv_sang = tv_sang;
     }
     public String getTv_jo(){
         return tv_jo;
     }
-    public void setTv_jo(String j){
-        this.tv_jo = j;
+    public void setTv_jo(String tv_jo){
+        this.tv_jo = tv_jo;
     }
     public String getTv_ga(){
         return tv_ga;
     }
-    public void setTv_ga(String g){
-        this.tv_ga = g;
+    public void setTv_ga(String tv_ga){
+        this.tv_ga = tv_ga;
     }
 
 }

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_play;
     Button btn_coffee;
     Button btn_world;
+    Button btn_refill;
     SeekBar seekBar1;
     ImageView coffee1_img, coffee2_img, coffee3_img, coffee4_img;
     MediaPlayer mMediaPlayer;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
          }
      };
 
+     // 각 메뉴 버튼 클릭
     View.OnClickListener btn_coffee_click = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -67,6 +69,15 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     };
+
+    View.OnClickListener btn_refill_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, RefillList.class);
+            startActivity(intent);
+        }
+    };
+
 
      // 음악 재생 - seekbar 없음
 
@@ -152,6 +163,9 @@ public class MainActivity extends AppCompatActivity {
         btn_coffee.setOnClickListener(btn_coffee_click);
         btn_world = (Button)findViewById(R.id.btn_world);
         btn_world.setOnClickListener(btn_world_click);
+
+        btn_refill = (Button)findViewById(R.id.btn_refill);
+        btn_refill.setOnClickListener(btn_refill_click);
 
         btn_google = (Button)findViewById(R.id.btn_google);
         btn_google.setOnClickListener(btn_google_click);

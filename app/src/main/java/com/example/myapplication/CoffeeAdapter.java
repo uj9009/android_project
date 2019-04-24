@@ -86,6 +86,9 @@ public class CoffeeAdapter extends BaseAdapter {
         ImageView profile = (ImageView)convertView.findViewById(R.id.profile);
         profile.setImageResource(coffeeItem.getProfile());
 
+        ImageView profile2 = (ImageView)convertView.findViewById(R.id.profile2);
+        profile2.setImageResource(coffeeItem.getProfile2());
+
         //이름 연동
         TextView name = (TextView)convertView.findViewById(R.id.name);
         name.setText(coffeeItem.getName());
