@@ -79,7 +79,7 @@
             android:id="@+id/btn_google"
             android:layout_width="175dp"
             android:layout_height="wrap_content"
-            android:text="google"
+            android:text="map"
             android:textSize="10dp"/>
 
         <Button
