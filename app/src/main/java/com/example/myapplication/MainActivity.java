@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_coffee;
     Button btn_world;
     Button btn_refill;
+    Button btn_choice;
     SeekBar seekBar1;
     ImageView coffee1_img, coffee2_img, coffee3_img, coffee4_img;
     MediaPlayer mMediaPlayer;
@@ -74,6 +75,14 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, RefillList.class);
+            startActivity(intent);
+        }
+    };
+
+    View.OnClickListener btn_choice_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent = new Intent(MainActivity.this, ChoiceActivity.class);
             startActivity(intent);
         }
     };
@@ -163,6 +172,8 @@ public class MainActivity extends AppCompatActivity {
         btn_coffee.setOnClickListener(btn_coffee_click);
         btn_world = (Button)findViewById(R.id.btn_world);
         btn_world.setOnClickListener(btn_world_click);
+        btn_choice = (Button)findViewById(R.id.btn_choice);
+        btn_choice.setOnClickListener(btn_choice_click);
 
         btn_refill = (Button)findViewById(R.id.btn_refill);
         btn_refill.setOnClickListener(btn_refill_click);

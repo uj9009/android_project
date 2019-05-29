@@ -129,7 +129,7 @@ public class Main2Activity extends AppCompatActivity
         map.animateCamera(CameraUpdateFactory.zoomTo(11));
     }
 
-    public Marker addMarker(MarkerModel markerModel, boolean )
+   // public Marker addMarker(MarkerModel markerModel, boolean )
 
     @Override
     public void onMapClick(LatLng latLng) {

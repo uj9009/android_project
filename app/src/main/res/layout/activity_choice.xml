@@ -6,7 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".ChoiceActivity"
     android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="오늘은 무슨 커피를 마셔볼까요 ~?"/>
 
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/caramellatte" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/americano" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/appuccino"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/caramelmacchiato" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/cinnamoncafemocha" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/espresso" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/hazelnutlatte" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/mocha" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/vanillalatte" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="400dp"
+            android:layout_height="500dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/whitecafemocha" />
+    </ViewFlipper>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,85 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="멈추기"
-            android:onClick="btnc"/>
+            />
     </LinearLayout>
-
-    <ViewFlipper
-        android:id="@+id/viewFlipper"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/caramellatte" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/americano" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/appuccino"/>
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/caramelmacchiato" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/cinnamoncafemocha" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/espresso" />
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/hazelnutlatte" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/mocha" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/vanillalatte" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal|center_vertical"
-            app:srcCompat="@drawable/whitecafemocha" />
-
-
-    </ViewFlipper>
 
 </LinearLayout>
