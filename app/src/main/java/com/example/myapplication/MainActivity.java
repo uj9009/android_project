@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
     Button  mplaybtn, btn_google;
     Button mstopbtn;
     Button btn_stop;
-    Button btn_play;
+    ImageView btn_play;
     Button btn_coffee;
     Button btn_world;
     Button btn_refill;
-    Button btn_choice;
+    Button btn_choice, btn_quiz;
     SeekBar seekBar1;
-    ImageView coffee1_img, coffee2_img, coffee3_img, coffee4_img;
+    ImageView coffee1_img, coffee2_img, coffee3_img, coffee4_img, img_coffee, img_refill, img_cafe, img_world, img_choice, img_quiz;
     MediaPlayer mMediaPlayer;
 
 
@@ -84,6 +85,16 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, ChoiceActivity.class);
             startActivity(intent);
+        }
+    };
+
+    View.OnClickListener btn_quiz_click = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            Intent intent = new Intent(MainActivity.this,  QuizActivity.class);
+            startActivity(intent);
+
         }
     };
 
@@ -168,12 +179,28 @@ public class MainActivity extends AppCompatActivity {
       //  main_coffee.setOnClickListener(main_coffee_click);
      //   main_world.setOnClickListener(main_world_click);
 
+        // 이미지
+        img_coffee = (ImageView)findViewById(R.id.img_coffee);
+        img_coffee.setOnClickListener(btn_coffee_click);
+        img_world = (ImageView)findViewById(R.id.img_world);
+        img_world.setOnClickListener(btn_world_click);
+        img_cafe = (ImageView)findViewById(R.id.img_cafe);
+        img_cafe.setOnClickListener(btn_google_click);
+        img_refill = (ImageView)findViewById(R.id.img_refill);
+        img_refill.setOnClickListener(btn_refill_click);
+        img_choice = (ImageView)findViewById(R.id.img_choice);
+        img_choice.setOnClickListener(btn_choice_click);
+        img_quiz = (ImageView)findViewById(R.id.img_quiz);
+        img_quiz.setOnClickListener(btn_quiz_click);
+
         btn_coffee = (Button)findViewById(R.id.btn_coffee);
         btn_coffee.setOnClickListener(btn_coffee_click);
         btn_world = (Button)findViewById(R.id.btn_world);
         btn_world.setOnClickListener(btn_world_click);
         btn_choice = (Button)findViewById(R.id.btn_choice);
         btn_choice.setOnClickListener(btn_choice_click);
+        btn_quiz = (Button)findViewById(R.id.btn_quiz);
+        btn_quiz.setOnClickListener(btn_quiz_click);
 
         btn_refill = (Button)findViewById(R.id.btn_refill);
         btn_refill.setOnClickListener(btn_refill_click);
@@ -182,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
         btn_google.setOnClickListener(btn_google_click);
 
         // 음악재생 - seekbar 있음
-        btn_play = (Button)findViewById(R.id.btn_play);
+        btn_play = (ImageView)findViewById(R.id.btn_play);
         seekBar1 = (SeekBar) findViewById(R.id.seekBar1);
 
        mMediaPlayer = MediaPlayer.create(this, R.raw.americano);
@@ -219,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
 
          if (mMediaPlayer.isPlaying()) {
              mMediaPlayer.pause();
-             btn_play.setText("start");
+             btn_play.setImageResource(R.drawable.play);
               //재생중이면 실행될 작업 (정지)
              try {
                  mMediaPlayer.prepare();
@@ -233,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
              seekBar1.setProgress(0);
          }else {
              mMediaPlayer.start(); //재생
-             btn_play.setText("stop");
+             btn_play.setImageResource(R.drawable.stop);
 
 
               Thread();

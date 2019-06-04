@@ -12,6 +12,9 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Main2Activity extends AppCompatActivity
         implements OnMapReadyCallback, GoogleMap.OnMapClickListener {
@@ -36,12 +39,17 @@ public class Main2Activity extends AppCompatActivity
         LatLng cafe4_1 = new LatLng(37.581906, 127.001669);
 
         MarkerOptions markerOptions4_1 = new MarkerOptions();
-        markerOptions4_1.position(cafe4_1);
+        markerOptions4_1.position(new LatLng(37.581906, 127.001669));
         markerOptions4_1.title("학림다방");
      //   markerOptions2.snippet("한국의 수도");
         map.addMarker(markerOptions4_1);
         map.moveCamera(CameraUpdateFactory.newLatLng(cafe4_1));
 
+//        List<MarkerOptions> list = new ArrayList<>();
+//        list.add(new MarkerOptions().title("d").position(new LatLng(37.581906, 127.001669))); 80번 반복
+//        for (int i = 0; i < list.size(); i++) {
+//            map.addMarker(list.get(i));
+//        }
 
      // 2번째
         LatLng cafe4_2 = new LatLng(37.582042, 126.999882);

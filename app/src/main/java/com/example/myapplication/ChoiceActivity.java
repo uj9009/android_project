@@ -16,6 +16,8 @@ public class ChoiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choice);
 
+
+
         bStart = findViewById(R.id.bStart);
         bStop = findViewById(R.id.bStop);
         vf = findViewById(R.id.viewFlipper);

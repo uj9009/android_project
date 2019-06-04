@@ -25,11 +25,11 @@
             />
 
         <ImageView
+            android:id="@+id/logo"
             android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:src="@drawable/logo"
-            android:id="@+id/logo"/>
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:src="@drawable/logo" />
     </LinearLayout>
 
     <ViewFlipper
@@ -63,68 +63,121 @@
         android:layout_height="1dp"
         android:background="@android:color/background_dark"
         ></View>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingLeft="6dp"
+        android:src="@drawable/coffee"
+        android:id="@+id/img_world"/>
         <Button
 
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:id="@+id/btn_world"
             android:text="w o r l d"
             android:textSize="20dp"
             android:gravity="left"
             style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/background_dark"
         ></View>
-
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="6dp"
+            android:src="@drawable/coffee"
+            android:id="@+id/img_cafe"/>
         <Button
             android:id="@+id/btn_google"
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
-            android:text="m a p"
+            android:text="c a f e"
             android:textSize="20dp"
             android:gravity="left"
             style="?android:attr/borderlessButtonStyle"/>
-
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/background_dark"></View>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="6dp"
+            android:src="@drawable/coffee"
+            android:id="@+id/img_refill"/>
         <Button
-            android:layout_width="match_parent"
+            android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:id="@+id/btn_refill"
             android:text="r e f i l l"
             android:textSize="20dp"
             android:gravity="left"
             style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/background_dark"
         ></View>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="6dp"
+            android:src="@drawable/coffee"
+            android:id="@+id/img_choice"/>
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:id="@+id/btn_choice"
         android:text="c h o i c e"
         android:textSize="20dp"
         android:gravity="left"
         style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/background_dark"
         ></View>
-    <Button
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_game"
-        android:text="g a m e"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="6dp"
+            android:src="@drawable/quiz"
+            android:id="@+id/img_quiz"/>
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_quiz"
+        android:text="q u i z"
         android:textSize="20dp"
         android:gravity="left"
         style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -134,19 +187,24 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="커피에 대한 정보를 찾으며 싱그러운 노래를 감상하세요"
-            android:layout_gravity="center" />
+                android:text="SONG FOR YOU"
+            android:paddingLeft="20dp"
+            android:paddingTop="7dp"
+            android:layout_gravity="left" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-        <Button
+        <ImageView
             android:id="@+id/btn_play"
+            android:src="@drawable/play"
             android:onClick="btn_play_click"
-            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_width="60dp"
             android:layout_height="match_parent"
-            android:text="play"/>
+
+           />
 
         <SeekBar
             android:id="@+id/seekBar1"
