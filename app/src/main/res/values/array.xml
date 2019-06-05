@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer-array name="img_title">
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
-        <item>@drawable/coffee1</item>
+        <item>@drawable/yogerpresso</item>
+        <item>@drawable/droptop</item>
+        <item>@drawable/seven</item>
+        <item>@drawable/caffepascucci</item>
+        <item>@drawable/coffeebean</item>
+        <item>@drawable/coffinegurunaru</item>
+        <item>@drawable/tomntoms</item>
+        <item>@drawable/paris</item>
+        <item>@drawable/hollyscoffee</item>
+        <item>@drawable/hands</item>
     </integer-array>
 
     <string-array name="title">

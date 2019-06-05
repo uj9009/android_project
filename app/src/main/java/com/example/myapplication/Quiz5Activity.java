@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class Quiz5Activity extends AppCompatActivity {
 
     TextView textView2;
-    Button button2;
+    Button button2, button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,8 @@ public class Quiz5Activity extends AppCompatActivity {
 
         textView2 = findViewById(R.id.textView2);
         button2 = findViewById(R.id.button2);
+        button3 = findViewById(R.id.button3);
+
 
         Intent intent = getIntent();
         int num1 = intent.getIntExtra("result",0);
@@ -26,8 +28,16 @@ public class Quiz5Activity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent1 = new Intent(getApplicationContext(),QuizActivity.class);
                 startActivity(intent1);
+            }
+        });
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent2);
             }
         });
 
