@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ChoiceActivity"
     android:orientation="vertical">
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -99,14 +101,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="오늘은 무슨 커피를 마셔볼까요~?" />
+            android:text="start"
+            style="?android:attr/borderlessButtonStyle"/>
 
         <Button
             android:id="@+id/bStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="멈추기"
+            android:text="stop"
+            style="?android:attr/borderlessButtonStyle"
             />
     </LinearLayout>
 

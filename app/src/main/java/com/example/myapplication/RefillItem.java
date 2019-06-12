@@ -6,15 +6,6 @@ public class RefillItem {
     private  String title, tv_sang, tv_jo, tv_ga;
     private int img_title;
 
- /*   public RefillItem(Drawable img_title, String titile, String s, String j, String g){
-
-        img_title = img_title;
-        titile = titile;
-        tv_ga = tv_ga;
-        tv_jo = tv_jo;
-        tv_sang = tv_sang;
- } */
-
 
     public int getImg_title(){
         return img_title;

@@ -7,6 +7,9 @@
     tools:context=".Quiz3Activity"
     android:orientation="vertical">
 
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,12 +76,12 @@
         android:layout_gravity="center"
         android:padding="20dp"
         style="?android:attr/borderlessButtonStyle"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="현재까지 점수 : "
-        android:paddingLeft="50dp"
-        android:textSize="20dp"
-        android:id="@+id/textView1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재까지 점수 : "
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:id="@+id/textView1"/>
 
     </LinearLayout></LinearLayout>

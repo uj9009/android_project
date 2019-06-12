@@ -42,39 +42,6 @@ public class CoffeeAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-       /* CustomViewHolder holder;
-
-        if (convertView == null) {
-            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.coffee_item, null, false);
-
-            holder = new CustomViewHolder();
-            holder.profile = (ImageView)convertView.findViewById(R.id.profile);
-            holder.name = (TextView)convertView.findViewById(R.id.name);
-            holder.info = (TextView)convertView.findViewById(R.id.info);
-
-            convertView.setTag(holder);
-        } else {
-            holder = (CustomViewHolder) convertView.getTag();
-        }
-
-        CoffeeItem item = coffeeItem.get(position);
-
-        holder.profile.setImageResource(item.getProfile());
-        holder.name.setText(item.getName());
-        holder.info.setText(item.getInfo());
-
-        return convertView;
-    }
-
-    class CustomViewHolder {
-        ImageView profile;
-        TextView name;
-        TextView info;
-    }
-
-    public void addItem(CoffeeItem item){
-        coffeeItem.add(item);
-    } */
 
 
        if (convertView == null) {

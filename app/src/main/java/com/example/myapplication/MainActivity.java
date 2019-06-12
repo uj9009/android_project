@@ -99,33 +99,6 @@ public class MainActivity extends AppCompatActivity {
     };
 
 
-     // 음악 재생 - seekbar 없음
-
-    /* View.OnClickListener btn_play_click = new View.OnClickListener() {
-         @Override
-         public void onClick(View v) {
-          //  mMediaPlayer.start();
-             if (mMediaPlayer != null){
-                 IsPlaying();
-             } else {
-                 mMediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.americano);
-               IsPlaying();
-             }
-
-         }
-     };
-
-    private void IsPlaying() {
-        if (!mMediaPlayer.isPlaying()) {
-            mMediaPlayer.start();
-            mplaybtn.setText("stop");
-        } else {
-            mplaybtn.setText("play");
-            mMediaPlayer.stop();
-            mMediaPlayer.release();
-            mMediaPlayer = null;
-        }
-    } */
 
 
      // 슬라이드
@@ -169,16 +142,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
-     //  main_coffee = (TextView)findViewById(R.id.main_coffee);
-     //  main_world = (TextView)findViewById(R.id.main_world);
-        // btn_music = (Button)findViewById(R.id.btn_music);
-
-      //  btn_more1.setOnClickListener(btn_more1_click);
-      //  btn_more2.setOnClickListener(btn_more2_click);
-      //  main_coffee.setOnClickListener(main_coffee_click);
-     //   main_world.setOnClickListener(main_world_click);
-
         // 이미지
         img_coffee = (ImageView)findViewById(R.id.img_coffee);
         img_coffee.setOnClickListener(btn_coffee_click);
@@ -192,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
         img_choice.setOnClickListener(btn_choice_click);
         img_quiz = (ImageView)findViewById(R.id.img_quiz);
         img_quiz.setOnClickListener(btn_quiz_click);
+
 
         btn_coffee = (Button)findViewById(R.id.btn_coffee);
         btn_coffee.setOnClickListener(btn_coffee_click);
